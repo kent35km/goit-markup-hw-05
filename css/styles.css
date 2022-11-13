@@ -91,8 +91,23 @@ img{
     margin-right: 50px;
 }
 
+.site-nav .nav-item{
+    position: relative;
+}
+
 .site-nav .link.current{
     color: var(--accent-color);
+}
+
+.site-nav .link.current::after{
+    content: " ";
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .mobile-list{
@@ -273,6 +288,26 @@ img{
 
 .work-list{
     display: flex;
+}
+
+.work-item{
+    position: relative;
+}
+
+.work-description{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--btn-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .work-item:not(:last-child){
@@ -473,7 +508,15 @@ img{
     margin-right: 10px;
 }
 
+/* .modal-backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
 
+} */
 
 
 /* Портфоліо */
@@ -546,6 +589,27 @@ img{
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
+}
+
+.card-item .wrapper{
+    position: relative;
+}
+
+.overlay-thumb{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--btn-white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 63px 24px;
 }
 
 
